@@ -1,0 +1,53 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+<head>
+    <title>Change Background Color to Green</title>
+    <style>
+        body {
+            font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+            font-size: 200%;
+            color: black;
+            background-color: lightcyan;
+            border-radius: 20px;
+            width: 400px;
+        }
+        #status {
+            /* avoid an excessively wide status text */
+            white-space: pre;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            max-width: 400px;
+            border-radius: 20px;
+        }
+        button{
+            background-color: lightsalmon;
+            width: 100px;
+            height: 100px;
+            border-radius: 20px;
+
+        }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+    <script type="text/javascript" src="popup.js"></script>
+</head>
+<body>
+
+<a href="https://www.instagram.com/?hl=en"> <button> Instagram </button> </a>
+<a href="https://www.facebook.com/"> <button> Facebook </button> </a>
+<a href="https://twitter.com/?lang=en"> <button> Twitter </button> </a>
+<a href="https://www.snapchat.com/"> <button> Snapchat </button> </a>
+<a href="https://www.snapchat.com/"> <button> Snapchat </button> </a>
+
+</body>
+</html>
